@@ -1,14 +1,11 @@
-.header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 0px;
+.footer {
+    background-color: #3a3a3a;
     &__logo {
         padding: 5% 5% 2% 5%;
         img {
             width: 200px;
             height: auto;
+            
         }
     }
 }
