@@ -1,0 +1,19 @@
+{
+  "name": "p3_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianneBricquir/OC_projet3_ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarianneBricquir/OC_projet3_ohmyfood/issues"
+  },
+  "homepage": "https://github.com/MarianneBricquir/OC_projet3_ohmyfood#readme"
+}
