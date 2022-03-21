@@ -1,5 +1,9 @@
+/*Utilisation du pattern 7-1 pour les fichiers sass*/
+
+/*Imports*/
 @import "./utils/variables";
 
-h1{
-    color : $primary-color
-}
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layouts/header";

@@ -1,5 +1,38 @@
+@charset "UTF-8";
+/*Utilisation du pattern 7-1 pour les fichiers sass*/
+/*Imports*/
+/*Définition des fondations du site : normes*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  box-sizing: border-box;
+}
+
+/*Définition des fondations du site : polices de caractère*/
+/* Font Shrikhand from Google Fonts */
+/* Font Roboto from Google Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1 {
-  color: #9356DC;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px;
+}
+.header__logo {
+  padding: 5%;
+}
+.header__logo img {
+  width: 200px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
