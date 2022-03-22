@@ -2,12 +2,15 @@
 
 /*Imports*/
 @import "./utils/variables";
+@import "./utils/mixins";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./layouts/header";
 @import "./layouts/footer";
+
+@import "./components/btn";
 
 /*fichiers scss pour les éléments selon les pages*/
 @import "./pages/accueil";

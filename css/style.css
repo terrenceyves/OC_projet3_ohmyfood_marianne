@@ -17,6 +17,7 @@ body {
 
 /*Layout of header, main and footer*/
 main {
+  box-sizing: border-box;
   flex-grow: 1;
   flex-shrink: 1;
   display: flex;
@@ -55,14 +56,46 @@ h1 {
 }
 
 .footer {
+  box-sizing: border-box;
+  width: 100%;
   background-color: #3a3a3a;
+  padding: 5%;
 }
 .footer__logo {
-  padding: 5% 5% 2% 5%;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  color: #fff;
 }
-.footer__logo img {
-  width: 200px;
-  height: auto;
+.footer__ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  padding-inline-start: 0px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.footer__text--icon {
+  margin-left: 15px;
+}
+.footer__text--icon2 {
+  font-size: 11px;
+}
+.footer__text::hover {
+  color: #fff;
+}
+
+.btn {
+  padding: 20px;
+  background: #ff79da;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
 }
 
 /*fichiers scss pour les éléments selon les pages*/
@@ -88,6 +121,37 @@ h1 {
   font-weight: 600;
   background-color: #ebebebff;
   border: 0px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  background-color: #f6f6f6ff;
+  padding: 30px;
+  margin-top: -20px;
+}
+.presentation__title {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+.presentation__undertitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fonctionnement {
+  margin-left: 20px;
+}
+.fonctionnement__title {
+  font-size: 24px;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=style.css.map */

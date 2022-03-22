@@ -1,11 +1,33 @@
 .footer {
+    box-sizing: border-box;
+    width: 100%;
     background-color: #3a3a3a;
+    padding:5%;
     &__logo {
-        padding: 5% 5% 2% 5%;
-        img {
-            width: 200px;
-            height: auto;
-            
+        font-family: 'Shrikhand';
+        font-size:20px;
+        color: #fff;
+    }
+    &__ul {
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+    &__text {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        padding-inline-start: 0px;
+        text-decoration: none;
+        margin-bottom:8px;
+        &--icon{
+            margin-left:15px;
         }
+        &--icon2{
+            font-size:11px;
+        }
+    }
+    &__text::hover {
+        color: #fff;
     }
 }

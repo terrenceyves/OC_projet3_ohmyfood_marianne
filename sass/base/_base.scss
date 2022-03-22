@@ -12,6 +12,7 @@ body {
 
 /*Layout of header, main and footer*/
 main {
+    box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 1;
     display: flex;
