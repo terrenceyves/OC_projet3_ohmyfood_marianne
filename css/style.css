@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Utilisation du pattern 7-1 pour les fichiers sass*/
 /*Imports*/
+/*Greys*/
 /*Définition des fondations du site : normes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -99,6 +100,7 @@ h1 {
 }
 
 /*fichiers scss pour les éléments selon les pages*/
+/*Page d'accueil */
 .location {
   width: 100%;
   height: 60px;
@@ -123,6 +125,13 @@ h1 {
   border: 0px;
 }
 
+/*Titles*/
+.accueilTitle {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/*Sections : presentation, fonctionnement et restaurants*/
 .presentation {
   display: flex;
   flex-direction: column;
@@ -133,12 +142,6 @@ h1 {
   height: 300px;
   background-color: #f6f6f6ff;
   padding: 30px;
-  margin-top: -20px;
-}
-.presentation__title {
-  font-size: 24px;
-  font-weight: 800;
-  text-align: center;
 }
 .presentation__undertitle {
   text-align: center;
@@ -146,12 +149,105 @@ h1 {
   font-weight: 400;
 }
 
-.fonctionnement {
-  margin-left: 20px;
+.fonctionnement,
+.restaurants {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5%;
+  height: 350px;
 }
-.fonctionnement__title {
-  font-size: 24px;
-  font-weight: 800;
+
+/*Section : fonctionnement*/
+.fctEtapes {
+  box-sizing: border-box;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.etape {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.etape__number {
+  z-index: 2;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 80px;
+  background-color: #9356dc;
+  color: #fff;
+  text-align: center;
+}
+.etape__content {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: -15px;
+  background-color: #f6f6f6ff;
+  box-shadow: 4px 6px 10px 0px #7e7d7d;
+  color: black;
+  text-align: center;
+}
+.etape__content__text {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.etape__content__icon {
+  width: 40px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #7e7d7d;
+}
+
+/*Section : Restaurants*/
+.restaurants {
+  background-color: #f6f6f6ff;
+}
+
+.lientRestau {
+  width: 30%;
+  height: 180px;
+  background-color: white;
+  border: solid 5px white;
+  box-shadow: 5px 5px 10px #c2c2c2;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 3%;
+}
+
+.restau {
+  width: 100%;
+  height: 100%;
+}
+.restau__img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 58%;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+.restau__img img {
+  width: 100%;
+  height: auto;
+}
+.restau__content {
+  margin-left: 2%;
+  height: 42%;
 }
 
 /*# sourceMappingURL=style.css.map */
