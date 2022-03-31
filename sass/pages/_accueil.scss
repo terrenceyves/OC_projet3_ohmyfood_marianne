@@ -105,17 +105,25 @@
 
 /*Section : Restaurants*/
 
-.restaurants{
+.restaurants {
     background-color: $main-color;
+    height: 1400px;
 }
-.lientRestau {
-    width: 30%;
-    height: 180px;
+
+.cardsRestau {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.lienRestau {
+    width: 100%;
+    height: 250px;
     background-color: white;
     border: solid 5px white;
     box-shadow: 5px 5px 10px#c2c2c2;
     border-radius: 20px 20px 20px 20px;
-    margin-bottom: 3%;
 }
 
 .restau {
@@ -123,9 +131,9 @@
     height: 100%;
     &__img {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         width: 100%;
-        height: 58%;
+        height: 75%;
         overflow: hidden;
         border-radius: 20px 20px 0px 0px;
         img {
@@ -135,6 +143,43 @@
     }
     &__content {
         margin-left: 2%;
-        height: 42%;
+        margin-right: 2%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__coeur {
+            font-size: 32px;
+        }
+        &__coeur:hover {
+            font-size: 32px;
+            color: $secondary-color;
+        }
+    }
+}
+
+/* Mobile phone version : screen < 768 px*/
+@media screen and (min-width: 767px) {
+    .restaurants {
+        height: 800px;
+    }
+
+    .cardsRestau {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 600px;
+    }
+    .lienRestau {
+        width: 100%;
+        width: 500px;
     }
 }
