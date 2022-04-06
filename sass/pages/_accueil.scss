@@ -175,36 +175,35 @@
 
 /* Mobile phone version : screen < 768 px*/
 @media screen and (min-width: 767px) {
-
-.fonctionnement,
-.restaurants {
-    padding: 2%;
-}
-
-/*Section : fonctionnement*/
-.fonctionnement {
-    height: 200px;
-}
-
-.fctEtapes {
-    margin-top:20px;
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 200px;
-    width: 100%;
-}
-
-.etape{
-    &__content {
-        width: 80%;
-    }
-}
-
-/*Section : Restaurants*/
+    .fonctionnement,
     .restaurants {
-        height:500px;
+        padding: 2%;
+    }
+
+    /*Section : fonctionnement*/
+    .fonctionnement {
+        height: 200px;
+    }
+
+    .fctEtapes {
+        margin-top: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 200px;
+        width: 100%;
+    }
+
+    .etape {
+        &__content {
+            width: 80%;
+        }
+    }
+
+    /*Section : Restaurants*/
+    .restaurants {
+        height: 500px;
     }
 
     .cardsRestau {
@@ -214,11 +213,11 @@
         width: 100%;
         height: 300px;
     }
-    
+
     .lienRestau {
         width: 280px;
     }
-    
+
     .restau {
         &__img {
             img {
