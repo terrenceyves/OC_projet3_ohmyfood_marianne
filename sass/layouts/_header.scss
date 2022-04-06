@@ -12,3 +12,12 @@
         }
     }
 }
+
+/* Mobile phone version : screen < 768 px*/
+@media screen and (min-width: 767px) {
+    .header {
+        &__logo {
+            padding: 2% 2% 1% 2%;
+        }
+    }
+}

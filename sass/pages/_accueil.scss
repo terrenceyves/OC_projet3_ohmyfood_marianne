@@ -32,11 +32,16 @@
 /*Sections : presentation, fonctionnement et restaurants*/
 .presentation {
     @include flex_column_center;
+    align-self: center;
     box-sizing: border-box;
     width: 100%;
     height: 300px;
     background-color: $main-color;
     padding: 30px;
+    &__title {
+        text-align: center;
+        width: 90%;
+    }
     &__undertitle {
         text-align: center;
         font-size: 18px;
@@ -49,10 +54,13 @@
     box-sizing: border-box;
     @include flex_column;
     padding: 5%;
-    height: 350px;
 }
 
 /*Section : fonctionnement*/
+.fonctionnement {
+    height: 400px;
+}
+
 .fctEtapes {
     box-sizing: border-box;
     height: 300px;
@@ -104,7 +112,6 @@
 }
 
 /*Section : Restaurants*/
-
 .restaurants {
     background-color: $main-color;
     height: 1400px;
@@ -114,15 +121,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90%;
+    align-self: center;
+    width: 98%;
+    height: 92%;
 }
 
 .lienRestau {
     width: 100%;
-    height: 250px;
+    height: 280px;
     background-color: white;
-    border: solid 5px white;
-    box-shadow: 5px 5px 10px#c2c2c2;
+    border: solid 1px white;
+    box-shadow: 5px 5px 10px #c2c2c2;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -166,20 +175,56 @@
 
 /* Mobile phone version : screen < 768 px*/
 @media screen and (min-width: 767px) {
+
+.fonctionnement,
+.restaurants {
+    padding: 2%;
+}
+
+/*Section : fonctionnement*/
+.fonctionnement {
+    height: 200px;
+}
+
+.fctEtapes {
+    margin-top:20px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+}
+
+.etape{
+    &__content {
+        width: 80%;
+    }
+}
+
+/*Section : Restaurants*/
     .restaurants {
-        height: 800px;
+        height:500px;
     }
 
     .cardsRestau {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
         width: 100%;
-        height: 600px;
+        height: 300px;
     }
+    
     .lienRestau {
-        width: 100%;
-        width: 500px;
+        width: 280px;
+    }
+    
+    .restau {
+        &__img {
+            img {
+                width: 150%;
+                height: auto;
+            }
+        }
     }
 }
