@@ -13,13 +13,14 @@
 .menu {
     box-sizing: border-box;
     width: 100%;
-    height: 1400px;
+    height: 1300px;
     background-color: $main-color;
     margin-top: -60px;
     border-radius: 40px 40px 0px 0px;
     padding: 5%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     &__title {
         display: flex;
         flex-direction: row;
@@ -44,13 +45,19 @@
             border-bottom: 3px solid $tertiary-color;
         }
     }
-    &__commande {
+    &__commande{
+        width: 100%;
+        margin-top:30px;
+        margin-bottom:30px;
+        display:flex;
+        justify-content: center;
+
     }
 }
 
 .plat {
     box-sizing: border-box;
-    margin-top: -10px ;
+    margin-top: -10px;
     margin-bottom: 20px;
     width: 100%;
     background-color: #fff;
@@ -61,10 +68,14 @@
         flex-direction: row;
         justify-content: space-between;
         &__prix {
-            margin-right:15px;
+            margin-right: 15px;
             font-weight: bold;
         }
     }
+}
+
+.lien-plat:hover {
+    cursor: pointer;
 }
 
 /* Tablett and Desktop version : screen < 768 px*/

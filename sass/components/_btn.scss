@@ -7,6 +7,9 @@
     font-size: 16px;
     color: #fff;
     text-align:center;
+    &:visited{
+        color: #fff;
+    }
 }
 
 .btn-new {
@@ -25,6 +28,7 @@
 .fa-heart {
         font-size: 32px;
     &:hover {
+        cursor: pointer;
         font-size: 32px;
         color: $secondary-color;
     }

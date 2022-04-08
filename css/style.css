@@ -48,11 +48,14 @@ body {
   font-style: normal;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0px;
 }
 
-h2, p {
+h2,
+p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -180,6 +183,9 @@ p {
   color: #fff;
   text-align: center;
 }
+.btn-restau:visited {
+  color: #fff;
+}
 
 .btn-new {
   position: absolute;
@@ -198,6 +204,7 @@ p {
   font-size: 32px;
 }
 .fa-heart:hover {
+  cursor: pointer;
   font-size: 32px;
   color: #ff79da;
 }
@@ -454,13 +461,14 @@ p {
 .menu {
   box-sizing: border-box;
   width: 100%;
-  height: 1400px;
+  height: 1300px;
   background-color: #f6f6f6ff;
   margin-top: -60px;
   border-radius: 40px 40px 0px 0px;
   padding: 5%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .menu__title {
   display: flex;
@@ -485,6 +493,14 @@ p {
   /* or 100px */
   border-bottom: 3px solid #99e2d0;
 }
+.menu__commande {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .plat {
   box-sizing: border-box;
   margin-top: -10px;
@@ -502,6 +518,10 @@ p {
 .plat__desc__prix {
   margin-right: 15px;
   font-weight: bold;
+}
+
+.lien-plat:hover {
+  cursor: pointer;
 }
 
 /* Tablett and Desktop version : screen < 768 px*/
