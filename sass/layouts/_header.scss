@@ -4,20 +4,46 @@
     flex-direction: column;
     width: 100%;
     padding: 0px;
+    &--menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    &__fleche {
+        padding: 5% 0% 2% 5%;
+        font-size: 30px;
+    }
     &__logo {
         padding: 5% 5% 2% 5%;
         img {
             width: 200px;
             height: auto;
         }
+        &--logo-menu {
+            width: 85%;
+            padding: 5% 5% 2% 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
     }
 }
 
-/* Mobile phone version : screen < 768 px*/
-@media screen and (min-width: 767px) {
+/* Tablett and desktop version of the header : screen < 768 px*/
+@media screen and (min-width: 768px) {
     .header {
         &__logo {
             padding: 2% 2% 1% 2%;
+            &--logo-menu {
+                padding: 2% 5% 2% 5%;
+            }
+        }
+        &__fleche {
+            padding: 2% 0% 2% 2%;
         }
     }
 }

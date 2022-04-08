@@ -38,8 +38,8 @@
   }
 
 
-/* Desktop version : screen 992 px*/
-@media screen and (min-width: 992px) {
+/* Tablett and Desktop version : screen < 768 px*/
+@media screen and (min-width: 768px) {
     .footer { 
         @include flex_column_center ;
         &__ul {
