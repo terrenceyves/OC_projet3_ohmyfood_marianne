@@ -17,6 +17,7 @@
         flex-direction: row;
         align-items: center;
         color: #fff;
+        font-size: 16px;
         padding-inline-start: 0px;
         text-decoration: none;
         margin-bottom:8px;
@@ -35,3 +36,14 @@
 .footer__text:visited{
     color: #fff;
   }
+
+
+/* Desktop version : screen 992 px*/
+@media screen and (min-width: 992px) {
+    .footer { 
+        @include flex_column_center ;
+        &__ul {
+            @include flex_column_center ;
+        }
+    }
+}

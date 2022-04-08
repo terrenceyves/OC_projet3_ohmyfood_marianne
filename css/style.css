@@ -109,6 +109,7 @@ p {
   flex-direction: row;
   align-items: center;
   color: #fff;
+  font-size: 16px;
   padding-inline-start: 0px;
   text-decoration: none;
   margin-bottom: 8px;
@@ -127,6 +128,21 @@ p {
   color: #fff;
 }
 
+/* Desktop version : screen 992 px*/
+@media screen and (min-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .btn-restau {
   padding: 20px;
   background: linear-gradient(180deg, #ff79da, #9356dc);
