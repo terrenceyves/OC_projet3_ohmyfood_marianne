@@ -237,6 +237,7 @@ p {
   position: absolute;
   z-index: 1;
   color: black;
+  cursor: pointer;
 }
 .coeur__plein {
   font-size: 30px;
@@ -246,6 +247,7 @@ p {
   z-index: 2;
 }
 .coeur__plein:hover {
+  cursor: pointer;
   opacity: 1;
   animation: heart-filled 300ms ease-in-out;
   transform-origin: bottom;
